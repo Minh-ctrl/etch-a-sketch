@@ -2,7 +2,7 @@ const container= document.querySelector('.container')
 function create_grid(){
     let options= prompt("how many blocks do you want? please choose from 10-64")
     let x= options * options;
-    document.documentElement.style.setProperty("--columns-row", options);
+    document.documentElement.style.setProperty("--grid-size", options);
     for (let i = 0; i < x; i++){
         const block= document.createElement('div');
         block.classList.add('block__RGB');

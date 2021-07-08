@@ -5,8 +5,8 @@
 .container{
     display: grid;
     border: 10px solid black;
-    grid-template-columns: repeat(var(--columns-row), 1fr);
-    grid-template-rows: repeat(var(--columns-row), 1fr);
+    grid-template-columns: repeat(var(--grid-size), 1fr);
+    grid-template-rows: repeat(var(--grid-size), 1fr);
     width: 500px;
     height: 500px;
   
