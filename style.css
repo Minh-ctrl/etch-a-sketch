@@ -1,7 +1,17 @@
+h1{
+    text-align: center;
+}
 .big__container{
-
-    display: border-box;
-    margin: 0;}
+    align-items:flex-start;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+}
+.btn__size{
+    flex-shrink: 3;
+}
 .container{
     display: grid;
     border: 10px solid black;
