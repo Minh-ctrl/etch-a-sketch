@@ -1,18 +1,13 @@
 const container= document.querySelector('.container');
 const button= document.querySelector('.btn__size');
+const slider= document.querySelector('.slider__size');
 function default_gridsize(){
-    create_grid(16);
+    create_grid(32);
 }
-function choose_size(){
-    button.addEventListener('click',()=>{
-        let options = prompt('how many blocks do you want? please choose from 10-64');
-        if(options < 0 || options >65 || options === undefined || options === null){
-            alert("Invalid Input, try again")
-            default_gridsize();
-        }
-        else{
-        create_grid(options);
-    }})
+function slider_size(){
+    slider.addEventListener('change',()=>{
+        create_grid(slider.value);
+    })
 }
 function create_grid(grid){
     let x= grid * grid;
@@ -27,4 +22,5 @@ function create_grid(grid){
         })
     }}
     default_gridsize();
+    slider_size();
     choose_size();
