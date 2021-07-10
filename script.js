@@ -1,10 +1,10 @@
 const container= document.querySelector('.container');
 const button= document.querySelector('.btn__size');
 const slider= document.querySelector('.slider__size');
-function default_gridsize(){
-    create_grid(32);
-}
+
 function slider_size(){
+    create_grid(32);
+
     slider.addEventListener('change',()=>{
         create_grid(slider.value);
     })
@@ -21,6 +21,5 @@ function create_grid(grid){
             block.style.backgroundColor='#' + color;
         })
     }}
-    default_gridsize();
     slider_size();
     choose_size();
