@@ -22,4 +22,3 @@ function create_grid(grid){
         })
     }}
     slider_size();
-    choose_size();
