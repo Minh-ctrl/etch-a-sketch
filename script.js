@@ -6,8 +6,13 @@ function slider_size(){
     create_grid(32);
 
     slider.addEventListener('change',()=>{
+        clear_grid();
         create_grid(slider.value);
     })
+}
+function clear_grid(grid){
+    const block = container.querySelectorAll('div');
+    block.forEach(block => block.style.backgroundColor='#ffffff');
 }
 function create_grid(grid){
     let x= grid * grid;
